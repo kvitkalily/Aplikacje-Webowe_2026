@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Tarot cards explanation - Kontakt</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="./style.css"
+    />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="galeria.html">Galeria</a></li>
+          <li><a href="kontakt.html" class="active">Kontakt</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="main-container">
+      <h1>Strona Kontaktowa</h1>
+      <form> <!-- https://developer.mozilla.org/en-US/docs/Learn_web_development/Extensions/Forms/Form_validation -->
+        <label for="email">E-mail</label>
+        <input type="text" id="email" name="email" placeholder="np. jan@example.com" 
+        required pattern="[^@\s]+@[^@\s]+\.[^@\s]{2,}"
+          title="Podaj poprawny adres e-mail, np. jan@example.com" />
+        <!-- https://ga-curriculum.github.io/html-forms/the-select-element/-->
+        <label for="subject">Temat wiadomości</label>
+        <select id="subject" name="subject">
+          <option value="pytanie">Pytanie o karty</option>
+          <option value="wspolpraca">Współpraca</option>
+          <option value="wspolpraca">Zamówić predykcję</option>
+          <option value="inne">Inne</option>
+        </select>
+
+        <label for="message">Wiadomość</label>
+        <textarea id="message" name="message" rows="6" placeholder="Napisz swoją wiadomość..." required minlength="10"></textarea>
+        <input type="submit" value="Wyślij" />
+        <p id="form-status" role="status"></p>
+      </form>
+    </main>
+    <footer>
+      <p>Liliia Nakonechna</p>
+      <p id="clock"></p>  <!-- do javascriptu -->
+    </footer>
+
+    <script src="index.js"></script>
+  </body>
+</html>

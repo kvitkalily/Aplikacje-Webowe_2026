@@ -6,98 +6,184 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0"
     />
-    <title>Artykuł</title>
+    <title>Tarot cards explanation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
     <link
       rel="stylesheet"
       href="./style.css"
     />
   </head>
   <body>
-    <main class="main-container">
-     <article>
-        <header><h1>Artykuł</h1>
-        <h1>Tajemnice Lorem ipsum</h1>
-        <p class="author">Autor: <span class="author-name">Jan Kowalski</span></p>
-        </header>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod
-          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-          veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-          commodo consequat.
-        </p>
- 
-        <p>
-          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-          dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </p>
- 
-        <p>
-          Curabitur pretium tincidunt lacus. Nulla gravida orci a odio. Nullam
-          varius, turpis et commodo pharetra, est eros bibendum elit, nec luctus
-          magna felis sollicitudin mauris. Integer in mauris eu nibh euismod
-          gravida.
-        </p>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="galeria.html">Galeria</a></li>
+          <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+      </nav>
+    </header>
 
-        <figure>
-          <img src="./imaje.jpg" alt="Placeholder Image" />
-          <figcaption>Obrazek z Pinterestu</figcaption>
-        </figure>
-        <h1>Uwaga: Ceny w tabeli są randomowe!</h1>
-        <table>
-          <thead>
-            <tr>
-              <th>Nr.</th>
-              <th>Nazwa produktu</th>
-              <th>Cena produktu</th>
-              <th>Ilość sztuk</th>
-            </tr>
-          </thead>
-          <!-- comment: Ceny w tabeli są randomowe -->
-          <tbody>
-            <tr>
-              <td>1</td>
-              <td>Chleb</td>
-              <td>2.50</td>
-              <td>10</td>
-            </tr>
-            <tr>
-              <td>2</td>
-              <td>Mleko</td>
-              <td>3.00</td>
-              <td>5</td>
-            </tr>
-            <tr>
-              <td>3</td>    
-              <td>Biedroniak</td>
-              <td>70.00</td>
-              <td>20</td>
-            </tr>
-            <tr>
-              <td>4</td>
-              <td>Szynka</td>
-              <td>15.00</td>
-              <td>10</td>
-            </tr>
-            <tr>
-              <td>5</td>
-              <td>Wino</td>
-              <td>25.00</td>
-              <td>5</td>
-            </tr>
-          </tbody>
-        </table>
-        <div class="row">
-        <div class="first_square"></div>
-        <div class="second_square"></div>
-        </div>
-        <div class="row">
-        <img class="third_square" src="./imagee.jpg" alt="Obrazek lol" />
-        <div class="fourth_square"></div>
-        <div class="fifth_square"></div>
-        </div>
-      </article>
+    <main class="main-container">
+      <h1>Strona poświęcona tłumaczeniom kart taro.</h1>
+      <img class="hero-img" src="./images/tarot.jpg" alt="Tarot image" />
+
+      <div class="table-wrap">
+      <table class="cards-table">
+        <thead>
+          <tr>
+            <th>Nr.</th>
+            <th>Nazwa karty</th>
+            <th>Znaczenie karty</th>
+            <th>Widok</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Głupiec</td>
+            <td>Nowy początek, spontaniczność, ufność i skok w nieznane.</td>
+            <td><img src="./images/fool.jpg" alt="Karta tarota Głupiec" /></td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Mag</td>
+            <td>Siła woli, umiejętności i wykorzystanie zasobów do osiągnięcia celu.</td>
+            <td><img src="./images/magician.jpg" alt="Karta tarota Mag" /></td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Najwyższa Kapłanka</td>
+            <td>Intuicja, tajemnica i wiedza ukryta pod powierzchnią.</td>
+            <td><img src="./images/high-priestess.jpg" alt="Karta tarota Najwyższa Kapłanka" /></td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>Cesarzowa</td>
+            <td>Płodność, obfitość, troska i twórcza energia.</td>
+            <td><img src="./images/empress.jpg" alt="Karta tarota Cesarzowa" /></td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>Cesarz</td>
+            <td>Władza, struktura, stabilność i autorytet.</td>
+            <td><img src="./images/emperor.jpg" alt="Karta tarota Cesarz" /></td>
+          </tr>
+          <tr>
+            <td>6</td>
+            <td>Najwyższy Kapłan</td>
+            <td>Tradycja, nauka, wartości i duchowe przewodnictwo.</td>
+            <td><img src="./images/hierophant.jpg" alt="Karta tarota Najwyższy Kapłan" /></td>
+          </tr>
+          <tr>
+            <td>7</td>
+            <td>Zakochani</td>
+            <td>Reprezentuje miłość, harmonię i wybory w relacjach. Może wskazywać na ważne decyzje dotyczące związków lub partnerstwa.</td>
+            <td><img src="./images/lovers.jpg" alt="Karta tarota Zakochani" /></td>
+          </tr>
+          <tr>
+            <td>8</td>
+            <td>Rydwan</td>
+            <td>Determinacja, kontrola i zwycięstwo dzięki zdyscyplinowanej woli.</td>
+            <td><img src="./images/chariot.jpg" alt="Karta tarota Rydwan" /></td>
+          </tr>
+          <tr>
+            <td>9</td>
+            <td>Siła</td>
+            <td>Odwaga, cierpliwość i łagodna siła wewnętrzna.</td>
+            <td><img src="./images/strength.jpg" alt="Karta tarota Siła" /></td>
+          </tr>
+          <tr>
+            <td>10</td>
+            <td>Pustelnik</td>
+            <td>Samotność, introspekcja i szukanie własnej prawdy.</td>
+            <td><img src="./images/hermit.jpg" alt="Karta tarota Pustelnik" /></td>
+          </tr>
+          <tr>
+            <td>11</td>
+            <td>Koło Fortuny</td>
+            <td>Cykle, zmiana losu i zbieg okoliczności.</td>
+            <td><img src="./images/wheel-of-fortune.jpg" alt="Karta tarota Koło Fortuny" /></td>
+          </tr>
+          <tr>
+            <td>12</td>
+            <td>Sprawiedliwość</td>
+            <td>Symbolizuje równowagę, uczciwość i konsekwencje działań. Wskazuje na potrzebę podejmowania odpowiedzialnych decyzji i dążenia do sprawiedliwości.</td>
+            <td><img src="./images/justice.jpg" alt="Karta tarota Sprawiedliwość" /></td>
+          </tr>
+          <tr>
+            <td>13</td>
+            <td>Wisielec</td>
+            <td>Zawieszenie, poświęcenie i spojrzenie z innej perspektywy.</td>
+            <td><img src="./images/hanged-man.jpg" alt="Karta tarota Wisielec" /></td>
+          </tr>
+          <tr>
+            <td>14</td>
+            <td>Śmierć</td>
+            <td>Koniec etapu, transformacja i nieunikniona zmiana.</td>
+            <td><img src="./images/death.jpg" alt="Karta tarota Śmierć" /></td>
+          </tr>
+          <tr>
+            <td>15</td>
+            <td>Umiarkowanie</td>
+            <td>Równowaga, umiar i harmonijne łączenie przeciwieństw.</td>
+            <td><img src="./images/temperance.jpg" alt="Karta tarota Umiarkowanie" /></td>
+          </tr>
+          <tr>
+            <td>16</td>
+            <td>Diabeł</td>
+            <td>Uzależnienia, pokusy i uwikłanie w ograniczające schematy.</td>
+            <td><img src="./images/devil.jpg" alt="Karta tarota Diabeł" /></td>
+          </tr>
+          <tr>
+            <td>17</td>
+            <td>Wieża</td>
+            <td>Nagły wstrząs, runięcie złudzeń i oczyszczenie.</td>
+            <td><img src="./images/tower.jpg" alt="Karta tarota Wieża" /></td>
+          </tr>
+          <tr>
+            <td>18</td>
+            <td>Gwiazda</td>
+            <td>Symbolizuje nadzieję, inspirację i duchowe przewodnictwo. Reprezentuje pozytywne zmiany i nowe możliwości w życiu.</td>
+            <td><img src="./images/star.jpg" alt="Karta tarota Gwiazda" /></td>
+          </tr>
+          <tr>
+            <td>19</td>
+            <td>Księżyc</td>
+            <td>Iluzje, lęki, sny i podświadomość.</td>
+            <td><img src="./images/moon.jpg" alt="Karta tarota Księżyc" /></td>
+          </tr>
+          <tr>
+            <td>20</td>
+            <td>Słońce</td>
+            <td>Radość, sukces, witalność i jasność.</td>
+            <td><img src="./images/sun.jpg" alt="Karta tarota Słońce" /></td>
+          </tr>
+          <tr>
+            <td>21</td>
+            <td>Sąd Ostateczny</td>
+            <td>Przebudzenie, rozliczenie i wezwanie do nowego etapu.</td>
+            <td><img src="./images/judgement.jpg" alt="Karta tarota Sąd Ostateczny" /></td>
+          </tr>
+          <tr>
+            <td>22</td>
+            <td>Świat</td>
+            <td>Dopełnienie, spełnienie i zakończony cykl.</td>
+            <td><img src="./images/wo.jpg" alt="Karta tarota Świat" /></td>
+          </tr>
+        </tbody>
+      </table>
+      </div>
+      <button id="to-top" type="button">Wróć na górę</button>
     </main>
+
+    <footer>
+      <p>Liliia Nakonechna</p>
+      <p id="clock"></p>  <!-- do javascriptu -->
+    </footer>
+
     <script src="index.js"></script>
   </body>
 </html>
